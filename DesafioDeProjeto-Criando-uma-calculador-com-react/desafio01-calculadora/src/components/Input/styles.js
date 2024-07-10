@@ -17,7 +17,8 @@ export const InputContainer = styled.div`
         height: 75px;
         background-color: #AAAAFF;
         border: 0;
-        text-align: center;
+        text-align: left;
+        padding: 10px;
 
         font-size: 24px;
         font-family: 'Roboto';
