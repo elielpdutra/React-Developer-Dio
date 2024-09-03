@@ -73,6 +73,20 @@ const App = () => {
 
   }
 
+  const handleDeleteNumbers = () => {
+
+    if(firstNumber == '0'){
+      setFirstNumber(String(currentNumber));
+      setCurrentNumber('0');
+      setOperation('.');
+    }else {
+      console.log(currentNumber.length)
+      const deletar = currentNumber.length > 1 ? currentNumber.slice(0, -1) : '0'
+      setCurrentNumber(String(deletar)); 
+      setOperation('');
+    }
+  }
+
   const handleEquals = () => {
 
     if(firstNumber != '0' && operation != '' && currentNumber != '0'){
@@ -104,7 +118,7 @@ const App = () => {
         <Button label="x" onClick={handleMultiplyNumbers} />
         <Button label="/" onClick={handleDivideNumbers} />
         <Button label="C" onClick={() => handleOnClear('C')} />
-        <Button label="#"  />
+        <Button label="#" onClick={handleDeleteNumbers} />
         </Row>
         <Row>
         <Button label="7" onClick={() => handleAddNumber('7')} />
