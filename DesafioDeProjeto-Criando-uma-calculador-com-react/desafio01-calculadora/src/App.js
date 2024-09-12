@@ -80,7 +80,10 @@ const App = () => {
       setCurrentNumber('0');
       setOperation('.');
     }else {
+<<<<<<< HEAD
       console.log(currentNumber.length)
+=======
+>>>>>>> df7d60118bf55b3311e741c28edf61bf7de03feb
       const deletar = currentNumber.length > 1 ? currentNumber.slice(0, -1) : '0'
       setCurrentNumber(String(deletar)); 
       setOperation('');
