@@ -1,18 +1,14 @@
+import React, { useState, useEffect } from "react";
+
 const App = () => {
-    // const arr = [1,2,3,4,5,6,7,8,9];
-    // return (
-    //     <div className="App">
-    //         <h1>Hello DIO!</h1>
-    //         {arr.map((item) => (
-    //             <p>
-    //                 {item} * 5 = {item * 5}
-    //             </p>
-    //         ))};
-    //     </div>
-    // );
+    const [usuarios, SetUsuarios] = useState(["Pablo", "José", "Manoel"]);
+ 
     return (
         <div className="App">
             <h1>Hello DIO!</h1>
+            {usuarios.map((item) => (
+                <p>{item}</p>
+            ))}
         </div>
     )
 };
