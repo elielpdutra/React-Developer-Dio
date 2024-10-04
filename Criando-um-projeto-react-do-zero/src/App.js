@@ -30,7 +30,7 @@ const App = () => {
             {usuarios.map((item) => (
                 <p>{item}</p>
             ))}
-            
+    
         </div>
     )
 };
