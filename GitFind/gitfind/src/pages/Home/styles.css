@@ -74,3 +74,10 @@ button {
     margin: 0;
     margin-top: 20px;
 }
+
+.repositorio {
+    font-size: 32px;
+    color: #ffffff;
+    margin: 12px 0;
+    text-align: center;
+}
